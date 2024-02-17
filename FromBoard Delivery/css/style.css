@@ -1,0 +1,66 @@
+body{
+    font-family: Formular;
+    background: rgb(229, 231, 235);
+}
+
+
+.container{
+    max-width: 1656px;
+    padding: 0 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (max-width:1537px) {
+    .container{
+        max-width: 1144px;
+    }
+}
+
+@media (max-width:1025px) {
+    .container{
+        max-width: 888px;
+    }
+}
+@media (max-width:700px){
+    .container{
+        padding: 0 15px;
+    }
+}
+
+
+
+
+
+/* button */
+
+.body__btn {
+    text-align: center;
+    padding: 10px 28px;
+    border-radius: 4px;
+    background: rgb(139, 92, 246);
+    color: rgb(249, 250, 251);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+@media (hover: hover) {
+    .body__btn:hover{
+        background: rgb(167, 139, 250);
+    }
+}
+
+@media (hover: none) {
+    .body__btn:active{
+        background: rgb(109, 40, 217);
+    }
+}
+
+.body__btn:active{
+    background: rgb(109, 40, 217);
+}
+
+.body__btn:disabled{
+    background: rgb(221, 214, 254);
+}

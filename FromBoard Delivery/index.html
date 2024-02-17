@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FromBoard Delivery</title>
+    <link rel="stylesheet" href="/css/style-reset.css">
+    <link rel="stylesheet" href="/fonts/formular/stylesheet.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style-header-content.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__title">
+                <img src="./img/svg/logo.svg" alt="logo" class="title__logo">
+                <div class="title__info">
+                    <div class="info__text info__text_header">
+                        <p>Доставляем товары из заграницы в Россию</p>
+                        <p>Стоимость от 550 рублей за заказ</p>
+                        <p>1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</p>
+                    </div>
+                    <div class="info__phone">
+                        <div>
+                            <p class="number number_info">+7 (800) 123 45-67 </p>
+                            <a href="#"><img src="./img/svg/Icon_Burger.svg" alt="icon_menu-burger"
+                                    class="info__menu-burger"></a>
+                        </div>
+                        <span>Звонки по России бесплатны</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="back-dark"></div>
+    <div class="content">
+        <div class="container">
+            <div class="content__menu">
+                <div class="menu">
+                    <div class="menu__list">
+                        <a href="#">Калькулятор</a>
+                        <a href="#">О нас</a>
+                        <a href="#">Гарантии</a>
+                        <a href="#">Отзывы</a>
+                    </div>
+                    <button class="body__btn">Оставить заявку</button>
+                </div>
+                <div class="info__text info__text_burger">
+                    <p>Доставляем товары из заграницы в Россию</p>
+                    <p>Стоимость от 550 рублей за заказ</p>
+                    <p>1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</p>
+                    <p class="number number_burger">+7 (800) 123 45-67</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main></main>
+    <footer></footer>
+    <script>
+
+        document.querySelector('.info__menu-burger').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.content').classList.toggle('open');
+            document.querySelector('.back-dark').classList.toggle('back-dark_open');
+
+        })
+
+    </script>
+</body>
+
+</html>
