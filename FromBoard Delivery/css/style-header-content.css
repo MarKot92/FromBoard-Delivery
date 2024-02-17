@@ -157,7 +157,7 @@
     text-align: center;
   }
 
-  .info__text_burger p:last-child{
+  .info__text_burger p:nth-child(3){
     flex-basis: 40%;
   }
 

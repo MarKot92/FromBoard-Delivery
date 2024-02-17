@@ -22,6 +22,14 @@ body{
         max-width: 888px;
     }
 }
+
+@media (max-width:840px) {
+    .container{
+        max-width: 760px;
+    }
+}
+
+
 @media (max-width:700px){
     .container{
         padding: 0 15px;
