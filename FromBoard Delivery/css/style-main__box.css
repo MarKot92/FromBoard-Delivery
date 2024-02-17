@@ -1,0 +1,144 @@
+.section{
+    padding-top: 72px;
+}
+.main__box {
+    display: flex;
+    gap: 24px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    color: rgb(17, 24, 39);
+    text-align: left;
+}
+.box__title{
+
+}
+.box h1{
+    font-size: clamp(1.875rem, 0.375rem + 1.56vw, 2.25rem);
+    font-weight: 900;
+    line-height: 1.11;
+}
+.box p{
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 12px 0 16px 0;
+}
+.box__img{
+    max-width: 768px;
+}
+
+.box__img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    
+}
+.box_calc {
+    border-radius: 16px;
+    background: rgb(249, 250, 251);
+    padding: 24px auto;
+    flex-basis: 50%;
+}
+
+.headline {
+    color: rgb(17, 24, 39);
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+.box__headline {
+    font-weight: 700;
+}
+.box__text {
+    max-width: 358px;
+    margin: 16px auto 28px;
+    color: rgb(17, 24, 39);
+    font-size: 16px;
+    line-height: 1.5;
+}
+.box__input {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(236px, 291px));
+    grid-template-areas: 
+        "name name"
+        "columnone columntwo"
+        "columnone columntwo"
+        "columnone columntwo"
+        "columnone columntwo"
+        "btn btn";
+    gap: 24px;
+}
+.input__item {
+    box-sizing: border-box;
+    border: 2px solid rgb(17, 24, 39);
+    border-radius: 4px;
+    padding: 10px 12px;
+
+}
+.item__name_grid{
+    grid-area: name;
+
+}
+.body__btn_grid{
+    grid-area: btn;
+
+}
+
+@media (max-width:1660px) {
+    .main__box{
+        flex-direction: column;
+    }
+    .box{
+        flex-direction: row;
+        gap: 16px;
+    }
+    .box__title{
+        flex: 1 1 50%;
+    }
+    .box__img{
+        flex: 1 1 50%;
+    }
+}
+
+@media (max-width:1025px) {
+    .box {
+        flex-direction: column;
+    }
+    .box_calc {
+        padding: 24px 99.5px;
+    }
+}
+
+@media (max-width:900px) {
+    .box_calc {
+        padding: 24px 35.5px;
+    }
+    
+}
+
+@media (max-width:600px) {
+    .box_calc {
+        padding: 15px;
+    }
+    .box__input {
+        grid-template-columns: repeat(1, minmax(236px, 291px));
+        grid-template-areas: 
+            "name"
+            "columnone"
+            "columnone"
+            "columnone"
+            "columnone"
+            "columnone"
+            "columnone"
+            "columnone"
+            "columnone"
+            "btn";
+        gap: 15px;
+    }
+    .box p{
+        margin: 10px 0;
+    }
+}

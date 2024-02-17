@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/fonts/formular/stylesheet.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/style-header-content.css">
+    <link rel="stylesheet" href="/css/style-main__box.css">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
             </div>
         </div>
     </header>
-    <div class="back-dark"></div>
+    <div class="backdark"></div>
     <div class="content">
         <div class="container">
             <div class="content__menu">
@@ -56,14 +57,52 @@
             </div>
         </div>
     </div>
-    <main></main>
+    <main class="main">
+        <div class="container">
+            <div class="section">
+                <div class="main__box">
+                    <div class="box">
+                        <div class="box__title">
+                            <h1>Без проблемная доставка купленных вещей из США, Европы и Азии в Россию</h1>
+                            <p>Сэкономьте на покупках и наслаждайтесь мировыми брендами — наш сервис позволяет вам легко
+                                и удобно
+                                заказывать товары со всего мира и получать их в России</p>
+                        </div>
+                        <div class="box__img"><img src="./img/box.jpeg" alt=""></div>
+                    </div>
+                    <div class="box_calc">
+                        <div class=" box__headline headline">Калькулятор доставки</div>
+                        <p class="box__text">Посчитайте, сколько будет стоить перевозка покупки из зарубежа</p>
+                        <form action="#" method="get" class="box__input">
+                            <input type="text" class="input__item item__name_grid" name="name" placeholder="Имя"
+                                value="">
+                            <input type="email" class="input__item" name=" email" placeholder="Почта" value="">
+                            <input type="tel" class="input__item" name="phone" placeholder="Телефон" value="">
+                            <input type="text" class="input__item" name=" total area" placeholder="Общая площадь, м²"
+                                value="">
+                            <input type="text" class="input__item" name="weight" placeholder="Вес, кг" value="">
+                            <input type="text" class="input__item" name=" сountry of purchase"
+                                placeholder="Страна покупки" value="">
+                            <input type="text" class="input__item" name="shopping city" placeholder="Город покупки"
+                                value="">
+                            <input type="text" class="input__item" name=" purchase area" placeholder="Область доставки"
+                                value="">
+                            <input type="text" class="input__item" name="delivery city" placeholder="Город доставки"
+                                value="">
+                            <button class="body__btn body__btn_grid">Заказать расчёт</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer></footer>
     <script>
 
         document.querySelector('.info__menu-burger').addEventListener('click', function () {
             this.classList.toggle('active');
             document.querySelector('.content').classList.toggle('open');
-            document.querySelector('.back-dark').classList.toggle('back-dark_open');
+            document.querySelector('.backdark').classList.toggle('backdark_open');
 
         })
 
