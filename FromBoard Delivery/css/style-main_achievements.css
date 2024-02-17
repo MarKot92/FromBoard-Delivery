@@ -1,0 +1,48 @@
+.achievements {
+}
+
+.achievements__block {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(372px, 501px));
+    gap: 24px;
+    margin-top: 24px;
+
+
+}
+.achievements_box {
+    display: flex;
+
+    max-width: 501px;
+    padding: 24px;
+    align-items: center;
+
+}
+.box__icon {
+
+}
+
+.box__icon img {
+
+
+}
+.box__subtitle {
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    margin-left: 12px;
+
+}
+.text__title {
+    font-size: clamp(1.25rem, 0.75rem + 0.78vw, 1.5rem);
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.33;
+}
+.text__info {
+    margin-top: 12px;
+    line-height: 1.42;
+    flex: 1 1 auto;
+    
+
+}
