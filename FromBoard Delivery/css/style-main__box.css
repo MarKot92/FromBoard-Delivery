@@ -12,6 +12,7 @@
     text-align: left;
 }
 .box__title{
+    
 
 }
 .box h1{
@@ -38,7 +39,7 @@
 .box_calc {
     border-radius: 16px;
     background: rgb(249, 250, 251);
-    padding: 24px auto;
+    padding: 24px 130px;
     flex-basis: 50%;
 }
 
